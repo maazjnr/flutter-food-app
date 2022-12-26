@@ -1,6 +1,8 @@
 import 'package:app/homepage.dart';
 import 'package:flutter/material.dart';
 
+import 'containerwidget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const HomePage(),
+      home: const ContainerWidget(),
     );
   }
 }
