@@ -3,6 +3,7 @@ import 'package:app/homepage.dart';
 import 'package:app/imagewidget.dart';
 import 'package:app/listviewwidget.dart';
 import 'package:app/rowcolumn.dart';
+import 'package:app/textinputfield.dart';
 import 'package:flutter/material.dart';
 import 'containerwidget.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const ButtonWidget(),
+      home: const TextFieldWidget(),
     );
   }
 }
