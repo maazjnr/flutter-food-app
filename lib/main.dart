@@ -1,3 +1,4 @@
+import 'package:app/buttonwidget.dart';
 import 'package:app/homepage.dart';
 import 'package:app/imagewidget.dart';
 import 'package:app/listviewwidget.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const ImageWidget(),
+      home: const ButtonWidget(),
     );
   }
 }
