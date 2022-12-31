@@ -1,4 +1,5 @@
 import 'package:app/buttonwidget.dart';
+import 'package:app/cardwidget.dart';
 import 'package:app/homepage.dart';
 import 'package:app/imagewidget.dart';
 import 'package:app/listviewwidget.dart';
@@ -14,9 +15,14 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const TabBarWidget(),
+      home: const CardWidget(),
     );
   }
 }
