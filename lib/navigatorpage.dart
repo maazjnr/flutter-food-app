@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class NavigatorWidget extends StatelessWidget {
   const NavigatorWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,14 +12,15 @@ class NavigatorWidget extends StatelessWidget {
 
       body: Center(
         child: ElevatedButton(onPressed: (() {
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Page02()));
+          Navigator.pushReplacement(context, 
+          MaterialPageRoute(builder: (context) => Page02()), );
         }), style: ElevatedButton.styleFrom(
           minimumSize: const Size(250, 70)
         ), child: const Text('Page 01') ),
       ),
     );
   }
-}
+} 
 
 class Page02 extends StatefulWidget {
   const Page02({super.key});

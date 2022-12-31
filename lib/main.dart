@@ -3,6 +3,7 @@ import 'package:app/homepage.dart';
 import 'package:app/imagewidget.dart';
 import 'package:app/listviewwidget.dart';
 import 'package:app/navigatorpage.dart';
+import 'package:app/pageviewwidget.dart';
 import 'package:app/rowcolumn.dart';
 import 'package:app/textinputfield.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const NavigatorWidget(),
+      home: const PageViewWidget(),
     );
   }
 }
